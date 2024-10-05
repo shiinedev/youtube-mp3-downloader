@@ -148,3 +148,16 @@ header{
     padding: 0 10px;
     cursor: pointer;
 }
+
+@media (max-width : 768px){
+    header{
+        justify-content: center;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+    .logo img{
+        height: 20px;
+        margin-right: 3px;
+    }
+}

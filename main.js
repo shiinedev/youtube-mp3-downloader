@@ -24,7 +24,7 @@ document.querySelector(".search-form").addEventListener("submit", async (e) => {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    console.log(result.data);
+    // console.log(result.data);
     displayVideosToDom(result.data);
   } catch (error) {
     console.error("error fetching search queryy", error);
@@ -34,7 +34,7 @@ document.querySelector(".search-form").addEventListener("submit", async (e) => {
 // Function to display videos in the DOM
 const displayVideosToDom = (videos) => {
   const videoList = document.querySelector("#video-list");
-  console.log(videoList);
+//   console.log(videoList);
 
   videoList.innerHTML = "";
   videos.forEach((video) => {
