@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YT MP3 DOWNLOADER</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="./imges/youtube-color-svgrepo-com.svg" alt="">
-            <h1>Youtube Search</h1>
-        </div>
-        <form class="search-form">
-            <input type="text" id="search-input" placeholder="Search">
-            <button type="submit">search</button>
-        </form>
+      <div class="logo">
+        <img src="./imges/youtube-color-svgrepo-com.svg" alt="" />
+        <h1>Youtube Search</h1>
+      </div>
+      <form class="search-form">
+        <input type="text" id="search-input" placeholder="Search" />
+        <button type="submit">search</button>
+      </form>
     </header>
+
     <div id="video-list">
-      
+
+    </div>
+
+    <div class="modal" id="video-model">
+
+      <div class="modal-content">
+        <span class="close-model">&times;</span>
+        <iframe
+        id="video-player"
+         
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <!-- <iframe id="video-player" frameborder="0"></iframe> -->
+        <button id="download-mp3">Download MP3</button>
+      </div>
+
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
