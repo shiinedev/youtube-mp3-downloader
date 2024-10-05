@@ -8,15 +8,16 @@ document.querySelector(".search-form").addEventListener("submit", async (e) => {
 
   // Define the API URL for fetching video data based on the search query
 
-  const url = `https://youtube-v3-alternative.p.rapidapi.com/search?query=${query}&type=video&lang=en`;
+  const url = `` // add your API URL for fetching video data based on the search query
+;
   
   // Set up the options for the fetch request, including headers for authentication
 
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "33928d43a1mshfc0bcb94acfafbdp1081e7jsn9010971be2cd",
-      "x-rapidapi-host": "youtube-v3-alternative.p.rapidapi.com",
+      "x-rapidapi-key": "" // add your api key,
+      "x-rapidapi-host": "" // add your api key host,
     },
   };
 
@@ -113,15 +114,15 @@ const downloadVideoToMp3 = async (videoId) => {
     
      // Define the API URL for downloading the audio
 
-    const url = `https://youtube-mp36.p.rapidapi.com/dl?id=${videoId}`
+    const url = ``; // add your API URL  for downloading the audio
 
       // Set up the options for the fetch request
 
     const options = {
         method: 'GET',
 	headers: {
-		'x-rapidapi-key': '33928d43a1mshfc0bcb94acfafbdp1081e7jsn9010971be2cd',
-		'x-rapidapi-host': 'youtube-mp36.p.rapidapi.com'
+		'x-rapidapi-key': '', // add your api key 
+		'x-rapidapi-host': '' // add your api host
 	}
     };
 
